@@ -10,8 +10,22 @@ var userModel = new UserModel;
 module.exports = [
 
     // Get user list
-    { method: 'GET', path: '/users', handler: function (request, reply) { reply(userModel.getUserList()); } },
+    {
+        method: 'GET',
+        path: '/users',
+        handler: function (request, reply) {
+
+            reply(userModel.getUserList());
+        }
+    },
 
     // Get user details
-    { method: 'GET', path: '/users/{id}', handler: function (request, reply) { reply(userModel.getUserDetails()); } }
+    {
+        method: 'GET',
+        path: '/users/{id}',
+        handler: function (request, reply) {
+
+            reply(userModel.getUserDetails());
+        }
+    }
 ];
