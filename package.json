@@ -1,0 +1,23 @@
+{
+  "name": "Auth",
+  "version": "1.0.0",
+  "description": "User authentification application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/centurionas/Auth.git"
+  },
+  "author": "Gytenis Mikulenas",
+  "license": "Gytenis Mikulenas",
+  "bugs": {
+    "url": "https://github.com/centurionas/Auth/issues"
+  },
+  "homepage": "https://github.com/centurionas/Auth",
+  "dependencies": {
+    "hapi": "^8.0.0"
+  }
+}
