@@ -1,11 +1,15 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green45\blue153;\red77\green77\blue77;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red0\green45\blue153;\red77\green77\blue77;\red128\green128\blue128;
+\red0\green0\blue128;\red102\green14\blue122;\red0\green128\blue0;\red122\green122\blue67;\red69\green131\blue131;
+}
 \margl1440\margr1440\vieww22460\viewh12020\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0\fs24 \cf0 1. Install HomeBrew (brew) Mac OS X package manager:\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \b \cf2 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 \b0 \cf0 \
@@ -32,9 +36,16 @@ Node comes with npm - program and dependency installation tool. But we need to u
 \
 6. File -> Default Settings -> Languages & Frameworks -> NodeJS & NPM -> Configure Core modules source. Pasirinkti download and install.\
 \
-7. Config WebStorm: http://blog.mega-art.com/getting-started-with-phaser-webstorm-and-typescript/\
+7. Config WebStorm: \
 \
+http://blog.mega-art.com/getting-started-with-phaser-webstorm-and-typescript/\
 http://twofuckingdevelopers.com/2013/06/setting-up-webstorm-typescript-on-mac/\
+\
+Pastaba: typescript watcher\'92yje argument line prideti papildoma argumenta: \
+\
+
+\b \cf2 --module CommonJS
+\b0 \cf0 \
 \
 \'97\'97\
 \
@@ -53,14 +64,14 @@ http://twofuckingdevelopers.com/2013/06/setting-up-webstorm-typescript-on-mac/\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \'97\'97\'97 Esmines komandos \'97\'97 
+\b \cf0 \'97\'97\'97 Esmines komandos \'97\'97 
 \b0 \
 \
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 1. Dependecy (package) local install
+\b 1. Dependecy (package) local install
 \b0 : https://docs.npmjs.com/getting-started/installing-npm-packages-locally\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
@@ -80,14 +91,158 @@ http://twofuckingdevelopers.com/2013/06/setting-up-webstorm-typescript-on-mac/\
 
 \b \cf2 npm install -g <libo pavadinimas>
 \b0 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 1. Dependecy remove: 
+\b \cf0 2. Dependecy remove: 
 \b0 https://docs.npmjs.com/cli/uninstall\
 \
+
+\b 3. Including Classes and Interfaces. 
+\b0 When you define a class or interface in the separate file as type (and of course you want to be able to include that in other files) then at the end you need to add\
 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\i \cf4 // Creating interface and class
+\f0\i0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\b \cf5 interface 
+\f3\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
+\f2\b \cf6 email 
+\f3\b0 \cf0 : 
+\f2\b \cf5 string
+\f3\b0 \cf0 ;\uc0\u8232 \}\u8232 \u8232 
+\f2\b \cf5 class 
+\f3\b0 \cf0 UserObject 
+\f2\b \cf5 implements 
+\f3\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
+\f2\b \cf5 public\uc0\u8232 \u8232 
+\f3\b0 \cf0     
+\f2\b \cf6 email 
+\f3\b0 \cf0 : 
+\f2\b \cf5 string
+\f3\b0 \cf0 ;\uc0\u8232 \u8232 \u8232     
+\f2\b \cf6 private\uc0\u8232 \u8232     
+\f1\i\b0 \cf4 // ...\uc0\u8232 
+\f3\i0 \cf0 \}\uc0\u8232 \u8232 
+\f2\b \cf5 export 
+\f3\b0 \cf0 = UserObject; 
+\f1\i \cf4 // This will allow to import and use UserObject class inside other files. If we want to be able to use interface then we need to export it also.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf4 // Importing and using this class inside other file - UserModel. Please note, the first line is used for TypeScript compiler. We will need to include this file in many files, therefore maybe it would be convenient to auto insert when new file is created.\
+
+\f3\i0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\i \cf4 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
+\f2\i0\b \cf5 import 
+\f3\b0 \cf0 UserObject = 
+\f2\b \cf5 require
+\f3\b0 \cf0 (
+\f2\b \cf7 '../DataObjects/UserObject'
+\f3\b0 \cf0 ); 
+\f1\i \cf4 // This will include class signature
+\f3\i0 \cf0 \uc0\u8232 \u8232 
+\f2\b \cf5 class 
+\f3\b0 \cf0 UserModel \{\uc0\u8232 \u8232     
+\f2\b \cf5 public\uc0\u8232 \u8232     
+\f3\b0 \cf8 getUserDetails\cf0 () : 
+\f2\b \cf5 string 
+\f3\b0 \cf0 \{\uc0\u8232 \u8232         
+\f2\b \cf5 var 
+\f3\b0 \cf9 userJsonString \cf0 = 
+\f2\b \cf7 '\{"firstName" : "Gytenis", "lastName" : "Mikulenas"\}'
+\f3\b0 \cf0 ;\uc0\u8232         
+\f2\b \cf5 var 
+\f3\b0 \cf9 user \cf0 = 
+\f2\b \cf5 new 
+\f3\b0 \cf0 UserObject(\cf9 userJsonString\cf0 );\uc0\u8232 \u8232         
+\f2\b \cf5 return 
+\f3\b0 \cf9 user\cf0 .\cf8 fullname\cf0 ();\uc0\u8232     \}\u8232 \}\u8232 \u8232 
+\f2\b \cf5 export 
+\f3\b0 \cf0 = UserModel; 
+\f1\i \cf4 // Making UserModel class available to include in other files
+\f3\i0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 4. Including objects (functions, arrays and etc) in other files
+\b0 . Routes are grouped and defined as arrays of anonymous objects. However, each route group is stored in separate file. In order to be able to use those route arrays in other files, we need to use a slightly different approach:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\i \cf4 // This is an example of UserRoute where we define two anonymous objects-routes for handling related requests. Please note we use module.exports instead (see at the end)
+\f0\i0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\i \cf4 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
+\f2\i0\b \cf5 import 
+\f3\b0 \cf0 UserModel = 
+\f2\b \cf5 require
+\f3\b0 \cf0 (
+\f2\b \cf7 '../Models/UserModel'
+\f3\b0 \cf0 );\uc0\u8232 \u8232 
+\f2\b \cf5 var 
+\f4\i \cf6 userModel 
+\f3\i0\b0 \cf0 = 
+\f2\b \cf5 new 
+\f3\b0 \cf0 UserModel;\uc0\u8232 \u8232 
+\f4\i\b \cf6 module
+\f3\i0\b0 \cf0 .
+\f2\b \cf6 exports 
+\f3\b0 \cf0 = [\uc0\u8232 \u8232     \{ 
+\f2\b \cf6 method
+\f3\b0 \cf0 : 
+\f2\b \cf7 'GET'
+\f3\b0 \cf0 , 
+\f2\b \cf6 path
+\f3\b0 \cf0 : 
+\f2\b \cf7 '/users'
+\f3\b0 \cf0 , \cf8 handler\cf0 : 
+\f2\b \cf5 function 
+\f3\b0 \cf0 (request, reply) \{ reply(
+\f4\i\b \cf6 userModel
+\f3\i0\b0 \cf0 .\cf8 getUserDetails\cf0 ()); \} \},\uc0\u8232     \{ 
+\f2\b \cf6 method
+\f3\b0 \cf0 : 
+\f2\b \cf7 'GET'
+\f3\b0 \cf0 , 
+\f2\b \cf6 path
+\f3\b0 \cf0 : 
+\f2\b \cf7 '/users/\{id\}'
+\f3\b0 \cf0 , \cf8 handler\cf0 : 
+\f2\b \cf5 function 
+\f3\b0 \cf0 (request, reply) \{\} \}\uc0\u8232 ];\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\i \cf4 // In order to use this array inside another file, we need to use var instead of import \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\i0\b \cf5 var 
+\f4\i \cf6 userRoute 
+\f3\i0\b0 \cf0 = 
+\f1\i \cf5 require
+\f3\i0 \cf0 (
+\f2\b \cf7 './UserRoute'
+\f3\b0 \cf0 );\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+\
+\
+\
 }
