@@ -41,15 +41,6 @@ Ps. you can check TypeScript version with the command:
 \b \cf2 tsc -v
 \f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
 \
-// 5. Install WebStorm\
-// 6. File -> Default Settings -> Languages & Frameworks -> NodeJS & NPM -> Configure Core modules source. Pasirinkti download and install.\
-// 7. Config WebStorm: \
-\
-http://blog.mega-art.com/getting-started-with-phaser-webstorm-and-typescript/\
-http://twofuckingdevelopers.com/2013/06/setting-up-webstorm-typescript-on-mac/\
-\
-Pastaba: typescript watcher\'92yje argument line prideti papildoma argumenta: \
-\
 5. Make sure \'93java -version\'94 shows you java 1.7+ installed. If not then install newest java JDK (Not JRE):\
 \
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html\
@@ -64,22 +55,19 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 \
 8. Install typescript plugin: https://github.com/palantir/eclipse-typescript\
 \
-//8. Configure Eclipse:  ant project desines peles click, Configure->Add TypeScript support:\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/palantir/eclipse-typescript/issues/21"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
-\ul \ulc3 https://github.com/palantir/eclipse-typescript/issues/21}}\
-//Eclipse Run -> Run Configurations. Pazymime TypeScript standalone ir su desiniu pasirenkame new. Pasirenkame project Gauth. Pasirenkame main file Server.ts\
-\pard\pardeftab720
-
-\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+9. Eclipse ant project spaudziant desini peles, tada properties. Pasirenkame Resource FIlters. Pridedame i exclude *.js failus, *.js.map failus (rekursyviai) ir node_modules direktorija.\
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 \
-9. Deployment script:\
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 10. Deployment script:\
 \
 http://superuser.com/questions/299938/how-can-i-recursively-copy-files-by-file-extension-preserving-directory-structu\
 \
 cd /Users/gytenis/data/AmazonWoods/Projects/Auth/\
 find . -name '*.js' -o -name '*.json' | cpio -pdm '/Users/gytenis/data/AmazonWoods/Projects/AuthDeploy';\
 \
-6. \
+\
+11. TypeScript kompiliatoriaus comandos (tsc) parametras, nurodantis kompiliavimo tipa\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
@@ -92,13 +80,13 @@ Pastaba2: galima padaryti, kad viskas butu kompiliuojama i viena faila:\
 \
 \'97\'97\
 \
-8. Sukuriam package.json konfiguravimo faila. Naudojamas kaip project description ir dependencies aprasymui. \
+12. Sukuriam package.json konfiguravimo faila. Naudojamas kaip project description ir dependencies aprasymui. \
 \
 
 \b \cf2 npm init
 \b0 \cf0 \
 \
-10. Install hapi framework (and add its reference to package.json):\
+13. Install hapi framework (and add its reference to package.json):\
 \
 \pard\pardeftab720
 
