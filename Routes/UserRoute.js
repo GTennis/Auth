@@ -1,7 +1,6 @@
 /**
  * Created by gytenis on 1/4/15.
  */
-/// <reference path="../node.d.ts" />
 var UserModel = require('../Models/UserModel');
 var userModel = new UserModel;
 module.exports = [
@@ -20,4 +19,3 @@ module.exports = [
         }
     }
 ];
-//# sourceMappingURL=UserRoute.js.map

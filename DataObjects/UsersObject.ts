@@ -2,34 +2,33 @@
  * Created by gytenis on 1/4/15.
  */
 
-/// <reference path="../node.d.ts" />
-
-import ParsableInterface = require('ParsableInterface');
+import IParsable = require('IParsable');
 import UserObject = require('UserObject');
 
-interface UsersInterface extends ParsableInterface{
+interface IUsersObject extends IParsable{
 
-    list : UsersInterface[];
+    list : UserObject[];
 }
 
-class UsersObject implements UsersInterface {
+class UsersObject implements IUsersObject {
 
     public
 
-        list : UsersInterface[];
+        list : UserObject[];
 
-    constructor() {
+    constructor(json : string) {
 
+        // ...
     }
 
     allUserNames() {
 
-        var userNames : string;
-        userNames = '';
+        var userNames : string = '';
+        var userObject : UserObject;
 
-        this.list.forEach(function(user) {
+        this.list.forEach(function(user : any) {
 
-            var userObject = <UserObject>user;
+            userObject = <UserObject>user;
             userNames += userObject.firstname+ ', ';
         });
 

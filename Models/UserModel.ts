@@ -2,8 +2,6 @@
  * Created by gytenis on 1/4/15.
  */
 
-/// <reference path="../node.d.ts" />
-
 import UserObject = require('../DataObjects/UserObject');
 import UsersObject = require('../DataObjects/UsersObject');
 
@@ -19,7 +17,7 @@ class UserModel {ß
         var userJsonString2 = '{"firstName" : "Tadas", "lastName" : "Valaitis"}';
         var user2 = new UserObject(userJsonString2);
 
-        var users = new UsersObject();
+        var users = new UsersObject('');
         users.list = [].concat(user1, user2);
 
         return users.allUserNames();

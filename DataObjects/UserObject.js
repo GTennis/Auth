@@ -19,4 +19,3 @@ var UserObject = (function () {
     return UserObject;
 })();
 module.exports = UserObject;
-//# sourceMappingURL=UserObject.js.map

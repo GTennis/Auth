@@ -2,13 +2,14 @@
  * Created by gytenis on 1/4/15.
  */
 var UsersObject = (function () {
-    function UsersObject() {
+    function UsersObject(json) {
+        // ...
     }
     UsersObject.prototype.allUserNames = function () {
-        var userNames;
-        userNames = '';
+        var userNames = '';
+        var userObject;
         this.list.forEach(function (user) {
-            var userObject = user;
+            userObject = user;
             userNames += userObject.firstname + ', ';
         });
         return userNames;
@@ -19,4 +20,3 @@ var UsersObject = (function () {
     return UsersObject;
 })();
 module.exports = UsersObject;
-//# sourceMappingURL=UsersObject.js.map

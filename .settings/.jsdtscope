@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="DataObjects"/>
+	<classpathentry kind="src" path="Models"/>
+	<classpathentry excluding="node_modules/joi/node_modules/isemail/test/|node_modules/joi/node_modules/moment/min/|node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise/test/|node_modules/inert/|node_modules/catbox-memory/test/|node_modules/heavy/lib/|node_modules/topo/|node_modules/mimos/|node_modules/shot/lib/|node_modules/vision/test/templates/valid/helpers/|node_modules/statehood/lib/|node_modules/cryptiles/test/|node_modules/vision/test/|node_modules/shot/|node_modules/catbox/node_modules/joi/node_modules/isemail/test/|node_modules/catbox/node_modules/joi/node_modules/isemail/lib/|node_modules/catbox/node_modules/joi/node_modules/moment/min/|node_modules/subtext/node_modules/pez/node_modules/b64/|node_modules/catbox/lib/|node_modules/catbox/node_modules/joi/.c9/metadata/workspace/lib/|node_modules/inert/test/|node_modules/subtext/test/|node_modules/cryptiles/lib/|node_modules/items/|node_modules/catbox/node_modules/joi/examples/|node_modules/catbox/node_modules/joi/lib/|node_modules/vision/examples/handlebars/|node_modules/inert/lib/|node_modules/ammo/|node_modules/subtext/lib/|node_modules/catbox/test/|node_modules/subtext/|node_modules/catbox/node_modules/joi/node_modules/moment/|node_modules/cryptiles/|node_modules/statehood/test/|node_modules/h2o2/|node_modules/joi/test/|node_modules/vision/|node_modules/qs/test/|node_modules/call/lib/|node_modules/hoek/|node_modules/shot/examples/|node_modules/vision/lib/|node_modules/shot/test/|node_modules/hoek/lib/|node_modules/catbox-memory/|node_modules/items/lib/|node_modules/joi/node_modules/isemail/|node_modules/h2o2/lib/|node_modules/inert/node_modules/lru-cache/lib/|node_modules/catbox/node_modules/joi/.c9/metadata/workspace/test/|node_modules/vision/test/templates/valid/helpers/tools/|node_modules/joi/|node_modules/statehood/|node_modules/qs/|node_modules/iron/lib/|node_modules/subtext/node_modules/pez/node_modules/b64/lib/|node_modules/mimos/test/|node_modules/wreck/lib/|node_modules/joi/examples/|node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise/lib/|node_modules/heavy/test/|node_modules/call/test/|node_modules/joi/lib/|node_modules/iron/test/|node_modules/wreck/test/|node_modules/subtext/node_modules/pez/node_modules/b64/test/|node_modules/qs/lib/|node_modules/h2o2/test/|node_modules/catbox/node_modules/joi/node_modules/moment/locale/|node_modules/iron/|node_modules/boom/lib/|node_modules/hoek/test/|node_modules/kilt/|node_modules/items/test/|node_modules/mimos/lib/|node_modules/ammo/lib/|node_modules/catbox/node_modules/joi/|node_modules/joi/node_modules/moment/locale/|node_modules/mimos/node_modules/mime-db/|node_modules/peekaboo/|node_modules/catbox/node_modules/joi/node_modules/isemail/|node_modules/accept/test/|node_modules/accept/lib/|node_modules/inert/node_modules/lru-cache/test/|node_modules/catbox/examples/|node_modules/call/|node_modules/subtext/node_modules/pez/node_modules/nigel/|node_modules/boom/test/|node_modules/subtext/node_modules/pez/|node_modules/joi/node_modules/isemail/lib/|node_modules/vision/examples/mixed/|node_modules/joi/node_modules/moment/|node_modules/hoek/test/modules/|node_modules/boom/|node_modules/vision/examples/cms/|node_modules/subtext/node_modules/pez/node_modules/nigel/test/|node_modules/catbox/node_modules/joi/test/|node_modules/ammo/test/|node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise/|node_modules/catbox-memory/lib/|node_modules/vision/examples/jade/|node_modules/accept/|node_modules/peekaboo/lib/|node_modules/heavy/|node_modules/kilt/test/|node_modules/subtext/node_modules/pez/lib/|node_modules/subtext/node_modules/content/lib/|node_modules/kilt/lib/|node_modules/peekaboo/test/|test/|node_modules/subtext/node_modules/pez/test/|node_modules/subtext/node_modules/content/test/|node_modules/catbox/|node_modules/wreck/|node_modules/subtext/node_modules/pez/node_modules/nigel/lib/|node_modules/subtext/node_modules/content/|node_modules/topo/test/|node_modules/topo/lib/|lib/" kind="src" path="node_modules/hapi"/>
+	<classpathentry kind="src" path="node_modules/hapi/lib"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/accept"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/accept/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/accept/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/ammo"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/ammo/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/ammo/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/boom"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/boom/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/boom/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/call"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/call/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/call/test"/>
+	<classpathentry excluding="node_modules/joi/node_modules/isemail/test/|node_modules/joi/node_modules/isemail/lib/|node_modules/joi/node_modules/moment/min/|lib/|node_modules/joi/.c9/metadata/workspace/lib/|node_modules/joi/examples/|node_modules/joi/lib/|test/|node_modules/joi/node_modules/moment/|node_modules/joi/.c9/metadata/workspace/test/|node_modules/joi/node_modules/moment/locale/|node_modules/joi/|node_modules/joi/node_modules/isemail/|examples/|node_modules/joi/test/" kind="src" path="node_modules/hapi/node_modules/catbox"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/catbox-memory"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox-memory/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox-memory/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/examples"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/lib"/>
+	<classpathentry excluding="node_modules/isemail/test/|node_modules/isemail/lib/|node_modules/moment/min/|.c9/metadata/workspace/lib/|examples/|lib/|node_modules/moment/|.c9/metadata/workspace/test/|node_modules/moment/locale/|node_modules/isemail/|test/" kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/.c9/metadata/workspace/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/.c9/metadata/workspace/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/examples"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/lib"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/isemail"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/isemail/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/isemail/test"/>
+	<classpathentry excluding="min/|locale/" kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/moment"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/moment/locale"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/node_modules/moment/min"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/node_modules/joi/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/catbox/test"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/cryptiles"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/cryptiles/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/cryptiles/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/h2o2"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/h2o2/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/h2o2/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/heavy"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/heavy/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/heavy/test"/>
+	<classpathentry excluding="lib/|test/|test/modules/" kind="src" path="node_modules/hapi/node_modules/hoek"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/hoek/lib"/>
+	<classpathentry excluding="modules/" kind="src" path="node_modules/hapi/node_modules/hoek/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/hoek/test/modules"/>
+	<classpathentry excluding="test/|lib/|node_modules/lru-cache/lib/|node_modules/lru-cache/test/" kind="src" path="node_modules/hapi/node_modules/inert"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/inert/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/inert/node_modules/lru-cache/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/inert/node_modules/lru-cache/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/inert/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/iron"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/iron/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/iron/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/items"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/items/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/items/test"/>
+	<classpathentry excluding="node_modules/isemail/test/|node_modules/moment/min/|test/|node_modules/isemail/|examples/|lib/|node_modules/moment/locale/|node_modules/isemail/lib/|node_modules/moment/" kind="src" path="node_modules/hapi/node_modules/joi"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/examples"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/lib"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/joi/node_modules/isemail"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/node_modules/isemail/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/node_modules/isemail/test"/>
+	<classpathentry excluding="min/|locale/" kind="src" path="node_modules/hapi/node_modules/joi/node_modules/moment"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/node_modules/moment/locale"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/node_modules/moment/min"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/joi/test"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/kilt"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/kilt/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/kilt/test"/>
+	<classpathentry excluding="test/|lib/|node_modules/mime-db/" kind="src" path="node_modules/hapi/node_modules/mimos"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/mimos/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/mimos/node_modules/mime-db"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/mimos/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/peekaboo"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/peekaboo/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/peekaboo/test"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/qs"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/qs/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/qs/test"/>
+	<classpathentry excluding="lib/|examples/|test/" kind="src" path="node_modules/hapi/node_modules/shot"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/shot/examples"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/shot/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/shot/test"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/statehood"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/statehood/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/statehood/test"/>
+	<classpathentry excluding="node_modules/pez/node_modules/nigel/node_modules/vise/test/|node_modules/pez/node_modules/b64/|test/|lib/|node_modules/pez/node_modules/b64/lib/|node_modules/pez/node_modules/nigel/node_modules/vise/lib/|node_modules/pez/node_modules/b64/test/|node_modules/pez/node_modules/nigel/|node_modules/pez/|node_modules/pez/node_modules/nigel/test/|node_modules/pez/node_modules/nigel/node_modules/vise/|node_modules/pez/lib/|node_modules/content/lib/|node_modules/pez/test/|node_modules/content/test/|node_modules/pez/node_modules/nigel/lib/|node_modules/content/" kind="src" path="node_modules/hapi/node_modules/subtext"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/lib"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/content"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/content/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/content/test"/>
+	<classpathentry excluding="node_modules/nigel/node_modules/vise/test/|node_modules/b64/|node_modules/b64/lib/|node_modules/nigel/node_modules/vise/lib/|node_modules/b64/test/|node_modules/nigel/|node_modules/nigel/test/|node_modules/nigel/node_modules/vise/|lib/|test/|node_modules/nigel/lib/" kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/lib"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/b64"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/b64/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/b64/test"/>
+	<classpathentry excluding="node_modules/vise/test/|node_modules/vise/lib/|test/|node_modules/vise/|lib/" kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel/lib"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel/node_modules/vise/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/node_modules/nigel/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/node_modules/pez/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/subtext/test"/>
+	<classpathentry excluding="test/|lib/" kind="src" path="node_modules/hapi/node_modules/topo"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/topo/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/topo/test"/>
+	<classpathentry excluding="test/templates/valid/helpers/|test/|examples/handlebars/|lib/|test/templates/valid/helpers/tools/|examples/mixed/|examples/cms/|examples/jade/" kind="src" path="node_modules/hapi/node_modules/vision"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/examples/cms"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/examples/handlebars"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/examples/jade"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/examples/mixed"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/lib"/>
+	<classpathentry excluding="templates/valid/helpers/|templates/valid/helpers/tools/" kind="src" path="node_modules/hapi/node_modules/vision/test"/>
+	<classpathentry excluding="tools/" kind="src" path="node_modules/hapi/node_modules/vision/test/templates/valid/helpers"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/vision/test/templates/valid/helpers/tools"/>
+	<classpathentry excluding="lib/|test/" kind="src" path="node_modules/hapi/node_modules/wreck"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/wreck/lib"/>
+	<classpathentry kind="src" path="node_modules/hapi/node_modules/wreck/test"/>
+	<classpathentry kind="src" path="node_modules/hapi/test"/>
+	<classpathentry kind="src" path="Repositories"/>
+	<classpathentry kind="src" path="Routes"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

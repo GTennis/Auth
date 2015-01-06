@@ -1,7 +1,6 @@
 /**
  * Created by gytenis on 1/4/15.
  */
-/// <reference path="../node.d.ts" />
 
 import UserModel = require('../Models/UserModel');
 

@@ -2,18 +2,16 @@
  * Created by gytenis on 1/4/15.
  */
 
-/// <reference path="../node.d.ts" />
+import IParsable = require('IParsable');
 
-import ParsableInterface = require('ParsableInterface');
-
-interface UserInterface extends ParsableInterface{
+interface IUserObject extends IParsable{
 
     firstname : string;
     lastname : string;
     email : string;
 }
 
-class UserObject implements UserInterface {
+class UserObject implements IUserObject {
 
     public
 
