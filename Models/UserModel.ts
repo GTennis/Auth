@@ -5,7 +5,7 @@
 import UserObject = require('../DataObjects/UserObject');
 import UsersObject = require('../DataObjects/UsersObject');
 
-class UserModel {ß
+class UserModel {
 
     public
 
