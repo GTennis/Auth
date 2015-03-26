@@ -1,6 +1,6 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Calibri;\f2\fnil\fcharset0 Menlo-Italic;
-\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-Regular;\f5\fnil\fcharset0 Menlo-BoldItalic;
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Calibri;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Italic;\f4\fnil\fcharset0 Menlo-Bold;\f5\fnil\fcharset0 Menlo-BoldItalic;
 }
 {\colortbl;\red255\green255\blue255;\red0\green45\blue153;\red56\green110\blue255;\red77\green77\blue77;
 \red128\green128\blue128;\red0\green0\blue128;\red102\green14\blue122;\red0\green128\blue0;\red122\green122\blue67;
@@ -95,6 +95,14 @@ Pastaba2: galima padaryti, kad viskas butu kompiliuojama i viena faila:\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
 \
+14. Paleidziam node serva is direktorijos:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 node server.js
+\f0\fs24 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \b \cf0 \'97\'97\'97 Esmines komandos \'97\'97 
@@ -134,69 +142,69 @@ Pastaba2: galima padaryti, kad viskas butu kompiliuojama i viena faila:\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f2\i \cf5 // Creating interface and class
+\f3\i \cf5 // Creating interface and class
 \f0\i0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f3\b \cf6 interface 
-\f4\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
-\f3\b \cf7 email 
-\f4\b0 \cf0 : 
-\f3\b \cf6 string
-\f4\b0 \cf0 ;\uc0\u8232 \}\u8232 \u8232 
-\f3\b \cf6 class 
-\f4\b0 \cf0 UserObject 
-\f3\b \cf6 implements 
-\f4\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
-\f3\b \cf6 public\uc0\u8232 \u8232 
-\f4\b0 \cf0     
-\f3\b \cf7 email 
-\f4\b0 \cf0 : 
-\f3\b \cf6 string
-\f4\b0 \cf0 ;\uc0\u8232 \u8232 \u8232     
-\f3\b \cf7 private\uc0\u8232 \u8232     
-\f2\i\b0 \cf5 // ...\uc0\u8232 
-\f4\i0 \cf0 \}\uc0\u8232 \u8232 
-\f3\b \cf6 export 
-\f4\b0 \cf0 = UserObject; 
-\f2\i \cf5 // This will allow to import and use UserObject class inside other files. If we want to be able to use interface then we need to export it also.\
+\f4\b \cf6 interface 
+\f2\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
+\f4\b \cf7 email 
+\f2\b0 \cf0 : 
+\f4\b \cf6 string
+\f2\b0 \cf0 ;\uc0\u8232 \}\u8232 \u8232 
+\f4\b \cf6 class 
+\f2\b0 \cf0 UserObject 
+\f4\b \cf6 implements 
+\f2\b0 \cf0 UserInterface \{\uc0\u8232 \u8232     
+\f4\b \cf6 public\uc0\u8232 \u8232 
+\f2\b0 \cf0     
+\f4\b \cf7 email 
+\f2\b0 \cf0 : 
+\f4\b \cf6 string
+\f2\b0 \cf0 ;\uc0\u8232 \u8232 \u8232     
+\f4\b \cf7 private\uc0\u8232 \u8232     
+\f3\i\b0 \cf5 // ...\uc0\u8232 
+\f2\i0 \cf0 \}\uc0\u8232 \u8232 
+\f4\b \cf6 export 
+\f2\b0 \cf0 = UserObject; 
+\f3\i \cf5 // This will allow to import and use UserObject class inside other files. If we want to be able to use interface then we need to export it also.\
 \
 // Importing and using this class inside other file - UserModel. Please note, the first line is used for TypeScript compiler. We will need to include this file in many files, therefore maybe it would be convenient to auto insert when new file is created.\
 
-\f4\i0 \cf0 \
+\f2\i0 \cf0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f2\i \cf5 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
-\f3\i0\b \cf6 import 
-\f4\b0 \cf0 UserObject = 
-\f3\b \cf6 require
-\f4\b0 \cf0 (
-\f3\b \cf8 '../DataObjects/UserObject'
-\f4\b0 \cf0 ); 
-\f2\i \cf5 // This will include class signature
-\f4\i0 \cf0 \uc0\u8232 \u8232 
-\f3\b \cf6 class 
-\f4\b0 \cf0 UserModel \{\uc0\u8232 \u8232     
-\f3\b \cf6 public\uc0\u8232 \u8232     
-\f4\b0 \cf9 getUserDetails\cf0 () : 
-\f3\b \cf6 string 
-\f4\b0 \cf0 \{\uc0\u8232 \u8232         
-\f3\b \cf6 var 
-\f4\b0 \cf10 userJsonString \cf0 = 
-\f3\b \cf8 '\{"firstName" : "Gytenis", "lastName" : "Mikulenas"\}'
-\f4\b0 \cf0 ;\uc0\u8232         
-\f3\b \cf6 var 
-\f4\b0 \cf10 user \cf0 = 
-\f3\b \cf6 new 
-\f4\b0 \cf0 UserObject(\cf10 userJsonString\cf0 );\uc0\u8232 \u8232         
-\f3\b \cf6 return 
-\f4\b0 \cf10 user\cf0 .\cf9 fullname\cf0 ();\uc0\u8232     \}\u8232 \}\u8232 \u8232 
-\f3\b \cf6 export 
-\f4\b0 \cf0 = UserModel; 
-\f2\i \cf5 // Making UserModel class available to include in other files
-\f4\i0 \cf0 \
+\f3\i \cf5 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
+\f4\i0\b \cf6 import 
+\f2\b0 \cf0 UserObject = 
+\f4\b \cf6 require
+\f2\b0 \cf0 (
+\f4\b \cf8 '../DataObjects/UserObject'
+\f2\b0 \cf0 ); 
+\f3\i \cf5 // This will include class signature
+\f2\i0 \cf0 \uc0\u8232 \u8232 
+\f4\b \cf6 class 
+\f2\b0 \cf0 UserModel \{\uc0\u8232 \u8232     
+\f4\b \cf6 public\uc0\u8232 \u8232     
+\f2\b0 \cf9 getUserDetails\cf0 () : 
+\f4\b \cf6 string 
+\f2\b0 \cf0 \{\uc0\u8232 \u8232         
+\f4\b \cf6 var 
+\f2\b0 \cf10 userJsonString \cf0 = 
+\f4\b \cf8 '\{"firstName" : "Gytenis", "lastName" : "Mikulenas"\}'
+\f2\b0 \cf0 ;\uc0\u8232         
+\f4\b \cf6 var 
+\f2\b0 \cf10 user \cf0 = 
+\f4\b \cf6 new 
+\f2\b0 \cf0 UserObject(\cf10 userJsonString\cf0 );\uc0\u8232 \u8232         
+\f4\b \cf6 return 
+\f2\b0 \cf10 user\cf0 .\cf9 fullname\cf0 ();\uc0\u8232     \}\u8232 \}\u8232 \u8232 
+\f4\b \cf6 export 
+\f2\b0 \cf0 = UserModel; 
+\f3\i \cf5 // Making UserModel class available to include in other files
+\f2\i0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0 \cf0 \
@@ -207,65 +215,65 @@ Pastaba2: galima padaryti, kad viskas butu kompiliuojama i viena faila:\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f2\i \cf5 // This is an example of UserRoute where we define two anonymous objects-routes for handling related requests. Please note we use module.exports instead (see at the end)
+\f3\i \cf5 // This is an example of UserRoute where we define two anonymous objects-routes for handling related requests. Please note we use module.exports instead (see at the end)
 \f0\i0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f2\i \cf5 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
-\f3\i0\b \cf6 import 
-\f4\b0 \cf0 UserModel = 
-\f3\b \cf6 require
-\f4\b0 \cf0 (
-\f3\b \cf8 '../Models/UserModel'
-\f4\b0 \cf0 );\uc0\u8232 \u8232 
-\f3\b \cf6 var 
+\f3\i \cf5 /// <reference path="../node.d.ts" />\uc0\u8232 \u8232 
+\f4\i0\b \cf6 import 
+\f2\b0 \cf0 UserModel = 
+\f4\b \cf6 require
+\f2\b0 \cf0 (
+\f4\b \cf8 '../Models/UserModel'
+\f2\b0 \cf0 );\uc0\u8232 \u8232 
+\f4\b \cf6 var 
 \f5\i \cf7 userModel 
-\f4\i0\b0 \cf0 = 
-\f3\b \cf6 new 
-\f4\b0 \cf0 UserModel;\uc0\u8232 \u8232 
+\f2\i0\b0 \cf0 = 
+\f4\b \cf6 new 
+\f2\b0 \cf0 UserModel;\uc0\u8232 \u8232 
 \f5\i\b \cf7 module
-\f4\i0\b0 \cf0 .
-\f3\b \cf7 exports 
-\f4\b0 \cf0 = [\uc0\u8232 \u8232     \{ 
-\f3\b \cf7 method
-\f4\b0 \cf0 : 
-\f3\b \cf8 'GET'
-\f4\b0 \cf0 , 
-\f3\b \cf7 path
-\f4\b0 \cf0 : 
-\f3\b \cf8 '/users'
-\f4\b0 \cf0 , \cf9 handler\cf0 : 
-\f3\b \cf6 function 
-\f4\b0 \cf0 (request, reply) \{ reply(
+\f2\i0\b0 \cf0 .
+\f4\b \cf7 exports 
+\f2\b0 \cf0 = [\uc0\u8232 \u8232     \{ 
+\f4\b \cf7 method
+\f2\b0 \cf0 : 
+\f4\b \cf8 'GET'
+\f2\b0 \cf0 , 
+\f4\b \cf7 path
+\f2\b0 \cf0 : 
+\f4\b \cf8 '/users'
+\f2\b0 \cf0 , \cf9 handler\cf0 : 
+\f4\b \cf6 function 
+\f2\b0 \cf0 (request, reply) \{ reply(
 \f5\i\b \cf7 userModel
-\f4\i0\b0 \cf0 .\cf9 getUserDetails\cf0 ()); \} \},\uc0\u8232     \{ 
-\f3\b \cf7 method
-\f4\b0 \cf0 : 
-\f3\b \cf8 'GET'
-\f4\b0 \cf0 , 
-\f3\b \cf7 path
-\f4\b0 \cf0 : 
-\f3\b \cf8 '/users/\{id\}'
-\f4\b0 \cf0 , \cf9 handler\cf0 : 
-\f3\b \cf6 function 
-\f4\b0 \cf0 (request, reply) \{\} \}\uc0\u8232 ];\
+\f2\i0\b0 \cf0 .\cf9 getUserDetails\cf0 ()); \} \},\uc0\u8232     \{ 
+\f4\b \cf7 method
+\f2\b0 \cf0 : 
+\f4\b \cf8 'GET'
+\f2\b0 \cf0 , 
+\f4\b \cf7 path
+\f2\b0 \cf0 : 
+\f4\b \cf8 '/users/\{id\}'
+\f2\b0 \cf0 , \cf9 handler\cf0 : 
+\f4\b \cf6 function 
+\f2\b0 \cf0 (request, reply) \{\} \}\uc0\u8232 ];\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0 \cf0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f2\i \cf5 // In order to use this array inside another file, we need to use var instead of import \
+\f3\i \cf5 // In order to use this array inside another file, we need to use var instead of import \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f3\i0\b \cf6 var 
+\f4\i0\b \cf6 var 
 \f5\i \cf7 userRoute 
-\f4\i0\b0 \cf0 = 
-\f2\i \cf6 require
-\f4\i0 \cf0 (
-\f3\b \cf8 './UserRoute'
-\f4\b0 \cf0 );\
+\f2\i0\b0 \cf0 = 
+\f3\i \cf6 require
+\f2\i0 \cf0 (
+\f4\b \cf8 './UserRoute'
+\f2\b0 \cf0 );\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0 \cf0 \
