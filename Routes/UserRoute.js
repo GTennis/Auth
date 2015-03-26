@@ -8,7 +8,11 @@ module.exports = [
         method: 'GET',
         path: '/users',
         handler: function (request, reply) {
-            reply(userModel.getUserList());
+            // Used from Hapi 8.0.0 spec:
+            // http://hapijs.com/api/8.0.0#reply-interface
+            var response = reply(userModel.getUserList() + '. headers: ' + JSON.stringify(request.headers) + '. query params: ' + JSON.stringify(request.query));
+            response.type('application/json');
+            response.header('cache-control', 'max-age=2');
         }
     },
     {
